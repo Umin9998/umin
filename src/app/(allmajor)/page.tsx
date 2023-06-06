@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { getAllMajor } from "./api/api";
-export default function allMajor() {
+export default function AllMajor() {
   const [majorList, setMajorList] = useState([]);
 
   const getFetchData = function () {
