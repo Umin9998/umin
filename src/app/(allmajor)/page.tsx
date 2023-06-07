@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { getAllMajor } from "./api/api";
+
 export default function AllMajor() {
   const [majorList, setMajorList] = useState([]);
 
@@ -14,6 +16,7 @@ export default function AllMajor() {
   }, []);
   return (
     <div>
+      <Link href="/career">career</Link>
       <div>
         {majorList.map(({ name, keyword, example }, i) => {
           return (
