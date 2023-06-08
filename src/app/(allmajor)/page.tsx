@@ -3,6 +3,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getAllMajor } from "./api/api";
 
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// `;
 export default function AllMajor() {
   const [majorList, setMajorList] = useState([]);
 
@@ -17,6 +23,7 @@ export default function AllMajor() {
   return (
     <div>
       <Link href="/career">career</Link>
+      <Link href="/advice">advice</Link>
       <div>
         {majorList.map(({ name, keyword, example }, i) => {
           return (
