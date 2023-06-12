@@ -24,6 +24,9 @@ export default function AllMajor() {
     <div>
       <Link href="/career">career</Link>
       <Link href="/advice">advice</Link>
+      <Link href="/advice/list">list</Link>
+      <Link href="/advice/listTeacher">listTeacher</Link>
+
       <div>
         {majorList.map(({ name, keyword, example }, i) => {
           return (

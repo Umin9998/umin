@@ -132,7 +132,7 @@ export const ADVICE_TEACHER_OF_COUNSELING = [
   {
     id: "teacher1",
     content: "희망 선생님 선택",
-    hidden: true,
+    hidden: "cassw1",
   },
   {
     id: "teacher2",
@@ -168,5 +168,155 @@ export const ADVICE_CONTENTS_OF_COUNSELING = [
     placeholder: "내용을 입력해 주세요",
     inputType: "textarea",
     value: "purpose",
+  },
+];
+
+//adviceList
+
+export const NOWTAB_APPLECATION_ADVICE_LIST_TITLE = [
+  {
+    id: "number",
+    content: "번호",
+  },
+  {
+    id: "counselingType",
+    content: "상담유형",
+  },
+  {
+    id: "title",
+    content: "제목",
+  },
+  {
+    id: "teacher",
+    content: "상담교사",
+  },
+  {
+    id: "date",
+    content: "상담희망일시",
+  },
+  {
+    id: "status",
+    content: "상태",
+  },
+];
+
+export const NOWTAB_COMPLETION_ADVICE_LIST_TITLE = [
+  {
+    id: "number",
+    content: "번호",
+  },
+  {
+    id: "counselingType",
+    content: "상담유형",
+  },
+  {
+    id: "title",
+    content: "제목",
+  },
+  {
+    id: "teacher",
+    content: "상담교사",
+  },
+  {
+    id: "date",
+    content: "상담일시",
+  },
+  {
+    id: "status",
+    content: "상태",
+  },
+];
+interface STATE_VALUE_TYPE {
+  [key: string]: string;
+}
+
+export const STATE_VALUE: STATE_VALUE_TYPE = {
+  re: "예약대기",
+  ch: "확인중",
+  con: "예약확정",
+  com: "상담완료",
+  del: "삭제",
+};
+
+//advice list teacher
+
+export const NOWTAB_APPLECATION_ADVICE_LIST_TITLE_TEACHER = [
+  {
+    id: "number",
+    content: "번호",
+  },
+  {
+    id: "counselingType",
+    content: "상담유형",
+  },
+  {
+    id: "title",
+    content: "제목",
+  },
+  {
+    id: "studentName",
+    content: "신청자",
+  },
+  {
+    id: "classNumber",
+    content: "학년/반/번호",
+  },
+  {
+    id: "date",
+    content: "상담희망일시",
+  },
+];
+
+export const NOWTAB_RESERVATION_LIST_TITLE_TEACHER = [
+  {
+    id: "number",
+    content: "번호",
+  },
+  {
+    id: "counselingType",
+    content: "상담유형",
+  },
+  {
+    id: "title",
+    content: "제목",
+  },
+  {
+    id: "studentName",
+    content: "신청자",
+  },
+  {
+    id: "classNumber",
+    content: "학년/반/번호",
+  },
+  {
+    id: "date",
+    content: "예약확정일시",
+  },
+];
+
+export const NOWTAB_COMPLICATION_LIST_TITLE_TEACHER = [
+  {
+    id: "number",
+    content: "번호",
+  },
+  {
+    id: "counselingType",
+    content: "상담유형",
+  },
+  {
+    id: "title",
+    content: "제목",
+  },
+  {
+    id: "studentName",
+    content: "신청자",
+  },
+  {
+    id: "classNumber",
+    content: "학년/반/번호",
+  },
+  {
+    id: "date",
+    content: "상담일시",
   },
 ];
