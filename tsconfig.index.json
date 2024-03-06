@@ -1,0 +1,19 @@
+// https://blog.logrocket.com/how-to-set-up-node-typescript-express/#generating-tsconfig-json
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "emitDecoratorMetadata": true, // @type("string")
+    "experimentalDecorators": true, // @type("string")
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": ["src/server/**/*.ts"],
+  "exclude": ["node_modules"]
+}

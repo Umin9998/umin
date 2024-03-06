@@ -1,0 +1,197 @@
+/* https://nextjs.org/docs/app/building-your-application/styling/css-modules#global-styles */
+/* Global styles can be imported into any layout, page, or component inside the app directory. */
+/* This is different from the pages directory, where you can only import global styles inside the _app.js file. */
+
+:root {
+  /* font-size: calc(100vw / 40); */
+  font-size: 62.5%;
+}
+
+/* https://tailwindcss.com/docs/functions-and-directives#directives */
+
+/* These are the three basic parts of tailwindcss that will import all of the pieces into your project. */
+
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@tailwind components;
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    /* @apply border-border; */
+  }
+
+  body {
+    /* @apply bg-background text-foreground; */
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* @font-face {
+  font-family: Roboto;
+  src: url("../app/fonts/Roboto-Regular.woff") format("woff");
+} */
+
+/* @media (max-width: 376px) {
+  * {
+    width: 375px;
+  }
+} */
+
+@font-face {
+  font-family: "AndongKaturi";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/andong/AndongKaturi.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/andong/AndongKaturi.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/andong/AndongKaturi.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/andong/AndongKaturi.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/andong/AndongKaturi.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "insungitCutelivelyjisu";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/insungitCutelivelyjisu.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IrishGroverRegular";
+  src: url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.eot");
+  src: url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1faa5a6e3484b8a175660219681d3d87.svg#Irish Grover Regular")
+      format("svg");
+}
+
+@font-face {
+  font-family: "HakgyoansimMalgeunnalB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimMalgeunnalB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumSquareRoundR.woff2")
+    format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

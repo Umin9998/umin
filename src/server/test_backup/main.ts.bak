@@ -1,0 +1,137 @@
+// https://blog.logrocket.com/build-server-rendered-react-app-next-express/
+//const getConfig = require("../../next.config");
+//const { basePath, port } = getConfig.publicRuntimeConfig;
+
+// https://blog.logrocket.com/how-to-set-up-node-typescript-express/
+
+//require("dotenv").config();
+//const dotenv = require("dotenv");
+//import dotenv from "dotenv";
+
+//dotenv.config();
+
+// https://socket.io/get-started/chat#integrating-socketio
+//const express = require("express");
+import express, { Express, Request, Response } from 'express';
+const http = require('http');
+// https://socket.io/docs/v4/server-initialization/#with-an-https-server
+//const { createServer } = require("https");
+const { createServer } = require('http');
+const next = require('next');
+// cors is a Node.js package that allows communication between different domains.
+// https://expressjs.com/en/resources/middleware/cors.html
+const cors = require('cors');
+
+// https://socket.io/get-started/chat#integrating-socketio
+const { Server } = require('socket.io');
+
+// detects whether to launch Next.js in dev or production mode.
+console.log('process.env.NEXT_ENV: ', process.env.NEXT_ENV);
+const dev = process.env.NEXT_ENV !== 'production';
+const app = next({ dev });
+// The app.getRequestHandler returns a request handler that we can use to parse all HTTP requests.
+const handle = app.getRequestHandler();
+
+console.log(process.env.PORT);
+const PORT = process.env.PORT || 3000;
+//const PORT = 443;
+const GAMEPORT = 2568;
+
+app
+  .prepare()
+  .then(() => {
+    // Express initializes app to be a function handler that you can supply to an HTTP server.
+    const app_: Express = express();
+    //const httpserver = http.createServer(app);
+
+    //app.use(express.json());
+    //app.use(express.urlencoded({ limit: "20kb", extended: false }));
+
+    const httpServer = createServer(app_);
+    // Initialize a new instance of socket.io by passing the server (the HTTP server) object.
+    // https://socket.io/docs/v4/handling-cors/
+    // https://github.com/expressjs/cors#configuration-options
+    const io = new Server(httpServer, {
+      cors: {
+        origin: '*',
+        methods: ['GET', 'POST']
+        // origin: [
+        //   "*", // Allow all origins
+        //   "https://polyade.com",
+        //   "https://happy-wave-0e09ab000.3.azurestaticapps.net",
+        //   "http://localhost:3000",
+        //   "http://localhost:2567",
+        //   "http://localhost:2568",
+        // ],
+      },
+      // https://socket.io/docs/v4/using-multiple-nodes
+      // https://socket.io/docs/v4/server-options/#path
+      path: '/metaverse/'
+    });
+
+    // https://socket.io/docs/v4/handling-cors/
+    // https://medium.com/zero-equals-false/using-cors-in-express-cac7e29b005b
+    //app_.use(cors());
+
+    //app.use(express.static("your-public-dir"))
+
+    // use a wild card route to catch all routes and return them to the handler function.
+    app_.get('*', (req: Request, res: Response) => {
+      return handle(req, res);
+    });
+
+    // X
+    // Here, the call /metaverse?id=2 happens under the hood where no one can see what is going on.
+    // The regular user sees the URL as /metaverse/2/.
+    // app_.get("/metaverse/:id", (req, res) => {
+    //   const actualPage = "/hello";
+    //   const queryParams = { id: req.params.id };
+    //   app_.render(req, res, actualPage, queryParams);
+    // });
+
+    // Listen on the connection event for incoming sockets.
+    // https://dev.to/novu/building-a-chat-app-with-socketio-and-react-2edj
+    io.on('connection', (socket: any) => {
+      console.log(`⚡: ${socket.id} user just connected!`);
+
+      socket.on('connect', () => {
+        console.log('🔥[socket] user connected');
+      });
+
+      socket.on('disconnect', () => {
+        console.log('🔥[socket]: A user disconnected');
+      });
+
+      socket.on('chat message', (msg: any) => {
+        console.log('message: ' + msg);
+        io.emit('chat message', msg);
+      });
+
+      socket.on('send_temp_data', (data: any) => {
+        io.emit('recv_temp_data', data); // This will emit the event to all connected sockets
+
+        console.log('data', data);
+        console.log(data.userId);
+        console.log(data.value);
+      });
+
+      socket.on('shared_data', (data: any) => {
+        console.log('data', data);
+      });
+    });
+
+    // Make the http server listen on port 3000.
+    httpServer.listen(PORT, (err: any) => {
+      if (err) throw err;
+      console.log(`⚡️[server]: Ready on http://localhost:${PORT}`);
+      //console.log(`listening on *:${PORT}`);
+    });
+
+    //const server = createServer(); // create the http server manually
+
+    console.log(`⚡️[colyseus]: Ready on http://localhost:${GAMEPORT}`);
+  })
+  .catch((ex: any) => {
+    console.error(ex.stack);
+    process.exit(1);
+  });
