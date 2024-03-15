@@ -59,18 +59,18 @@ const fadeIn = keyframes`
   }
   100% {
    
-    text-shadow: 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #f0f,
-    0 0 8px #f0f, 0 0 9px #f0f, 0 0 10px #f0f, 0 0 11px #f0f;
+    text-shadow: 0 0 4px #fff,  0 0 5px #fff,
+    0 0 6px #f0f, 0 0 7px pink, 0 0 8px pink, 0 0 9px pink;
   }
 `;
 const imageAnimation = keyframes`
   0% {
-    
-filter: drop-shadow(0px 0px 10px #fff);
+    filter: drop-shadow(0px 0px 10px #f0f);
+
   }
   100% {
-   
     filter: drop-shadow(0px 0px 10px #f0f);
+
   }
 `;
 const Container = styled.div`
@@ -85,7 +85,7 @@ const Container = styled.div`
     color: hotpink;
     font-size: 4rem;
     font-weight: 700;
-    animation: ${fadeIn} 0.5s ease-in-out alternate infinite;
+    animation: ${fadeIn} 2s ease-in-out alternate infinite;
   }
   > div {
     display: flex;
