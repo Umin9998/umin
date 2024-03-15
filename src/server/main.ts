@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const { createServer } = require("http");
 // https://socket.io/get-started/chat#integrating-socketio
@@ -67,6 +68,19 @@ app
 
       // render the index template // ejs
       res.render("index");
+    });
+    app.use(bodyParser.json());
+    app.post("/execute", (req: any, res: any) => {
+      const userInput: string = req.body.test;
+
+      try {
+        // 사용자 입력을 실행하고 결과를 반환
+        const result = eval(userInput);
+        res.json({ result });
+        console.log("result", result);
+      } catch (error: any) {
+        res.status(400).json({ error: error.message });
+      }
     });
     app_.all("*", (req: Request, res: Response) => {
       return handle(req, res);

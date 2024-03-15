@@ -1,6 +1,7 @@
 "use strict";
 const path = require("path");
 const express = require("express");
+const bodyParser = require("body-parser");
 const { createServer } = require("http");
 // https://socket.io/get-started/chat#integrating-socketio
 const { Server } = require("socket.io");
@@ -57,6 +58,18 @@ app
         //res.send('Root routing');
         // render the index template // ejs
         res.render("index");
+    });
+    app.use(bodyParser.json());
+    app.post("/execute", (req, res) => {
+        const userInput = req.body.test;
+        try {
+            // 사용자 입력을 실행하고 결과를 반환
+            const result = eval(userInput);
+            res.json({ result });
+        }
+        catch (error) {
+            res.status(400).json({ error: error.message });
+        }
     });
     app_.all("*", (req, res) => {
         return handle(req, res);
