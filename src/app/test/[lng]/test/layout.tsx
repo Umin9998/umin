@@ -38,7 +38,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </head>{" "}
       {/* <body>{children}</body> */}
       <StyledComponentsRegistry>
-        <body>{children}</body>
+        <body>
+          {children}
+          <div>dkf;alkjfa;lfkj</div>
+        </body>
       </StyledComponentsRegistry>
     </html>
   );
