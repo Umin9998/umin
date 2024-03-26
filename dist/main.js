@@ -66,6 +66,7 @@ app
             // 사용자 입력을 실행하고 결과를 반환
             const result = eval(userInput);
             res.json({ result });
+            console.log("result", result);
         }
         catch (error) {
             res.status(400).json({ error: error.message });
