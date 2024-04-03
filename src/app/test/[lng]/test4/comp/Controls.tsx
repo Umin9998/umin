@@ -1,5 +1,5 @@
 import { OrbitControls, TransformControls } from "@react-three/drei";
-import useObjectStore from "../store/ObjectStore"; // 앞서 작성한 Zustand 훅을 가져옴
+import useObjectStore from "../store/ObjectStore";
 import { useThree } from "@react-three/fiber";
 import { useEffect } from "react";
 
@@ -10,19 +10,22 @@ const Controls = () => {
   const scene = useThree((state) => state.scene);
 
   useEffect(() => {
-    console.log(state.current);
-  }, [scene]);
+    state.current && console.log(state.current);
+  }, [scene, state.current]);
   return (
     <>
       {state.current && (
         <TransformControls
-          object={scene.getObjectByName(state.current.name)}
+          object={state.current}
           mode={state.mode}
+          onChange={() => {
+            actions.setCurrent(state.current);
+          }}
         />
       )}
       <OrbitControls
         makeDefault
-        minPolarAngle={0}
+        minPolarAngle={1}
         maxPolarAngle={Math.PI / 1.75}
       />
     </>

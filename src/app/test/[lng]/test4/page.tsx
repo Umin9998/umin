@@ -1,156 +1,170 @@
 "use client";
-import { Canvas, act, useFrame } from "@react-three/fiber";
-import { OrbitControls, TransformControls } from "@react-three/drei";
-import Box from "./comp/Box";
-import useKeyboard from "../test3/customs/useKeyboard";
+import { Canvas } from "@react-three/fiber";
+import { Stats, OrbitControls, TransformControls } from "@react-three/drei";
+
 import "./styles.css";
-import { Suspense, useEffect, useState } from "react";
-import ObjectTest from "./comp/ObjectTest";
-import Controls from "./comp/Controls";
+
+import Box2 from "./comp/Box2";
+import useObjectStore2 from "./store/ObjectStore2";
+import { useControls } from "leva";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { object, style } from "blockly/core/utils";
 import styled from "styled-components";
-import useObjectStore from "./store/ObjectStore";
-import TransformContext from "./comp/TransformContext";
-import { parse } from "path";
-// <StrictMode> lets you find common bugs in your components early during development.
-// Use StrictMode to enable additional development behaviors and warnings for the component tree inside
-// https://react.dev/reference/react/StrictMode
-// reactStrictMode: true, in next.config.js
 
 export default function Page() {
-  const keyMap = useKeyboard();
-  const [selected, setSelected] = useState("");
-  const { state, actions } = useObjectStore();
-  //const { myValue } = useControls({ myValue: 10 });
-  //const { name, aNumber } = useControls({ name: 'World', aNumber: 0 });
-  const editableState = "./editableState.js";
-  const [menuPos, setMenuPos] = useState<{ x: number; y: number } | null>(null);
-  const [displayTransform, setDisplayTransform] = useState(false);
-  const handleContextMenu = () => {};
-  const [position, setPosition] = useState({ x: 1, y: 1, z: 1 });
-  const handleInputChange = (e: any) => {
-    const { name, value } = e.target;
-    // 입력된 값으로 position 객체 업데이트
-    setPosition({
-      ...position,
-      [name]: parseFloat(value), // 입력값은 문자열이므로 숫자로 변환하여 저장
+  const { target, setTarget } = useObjectStore2();
+  const canvasRef = useRef();
+  const [objects, setObjects] = useState<any>([]);
+  const [controls, setControls] = useState({});
+  useEffect(() => {
+    target && console.log(target);
+  }, [target]);
+  const { mode } = useControls({
+    mode: { value: "translate", options: ["translate", "rotate", "scale"] },
+  });
+  // const options = useMemo(() => {
+  //   return {
+  //     position_x: { value: 0, min: -5, max: 5, step: 0.01 },
+  //     position_y: { value: 0, min: -5, max: 5, step: 0.01 },
+  //     position_z: { value: 0, min: -5, max: 5, step: 0.01 },
+  //     rotation_x: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     rotation_y: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     rotation_z: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     scale_x: { value: 1, min: 0, max: 5, step: 0.01 },
+  //     scale_y: { value: 1, min: 0, max: 5, step: 0.01 },
+  //     scale_z: { value: 1, min: 0, max: 5, step: 0.01 },
+  //     visible: true,
+  //     wireframe: false,
+  //     color: { value: "pink" },
+  //   };
+  // }, []);
+  const options = {
+    position_x: { value: 0, min: -5, max: 5, step: 0.01 },
+    position_y: { value: 0, min: -5, max: 5, step: 0.01 },
+    position_z: { value: 0, min: -5, max: 5, step: 0.01 },
+    rotation_x: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+    rotation_y: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+    rotation_z: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+    scale_x: { value: 1, min: 0, max: 5, step: 0.01 },
+    scale_y: { value: 1, min: 0, max: 5, step: 0.01 },
+    scale_z: { value: 1, min: 0, max: 5, step: 0.01 },
+    visible: true,
+    wireframe: false,
+    color: { value: "pink" },
+  };
+
+  const generate3DObject = () => {
+    console.log("generate3DObject");
+    const defaultValues = objects.length === 0 ? 1 : objects.length + 1;
+
+    const newObjects = {
+      id: objects.length + 1,
+      position: [defaultValues, 1, 1],
+      rotation: [0, 0, 0],
+      scale: [1, 1, 1],
+      visible: true,
+      color: "pink",
+      wireframe: false,
+    };
+    setObjects([...objects, newObjects]);
+    //addControlsForObject(newObjects.id);
+  };
+  const addControlsForObject = (id: number) => {
+    const newControl = { [id]: useControls(`Box${id}`, options) };
+    setControls({
+      ...controls,
+      newControl,
     });
   };
-  useEffect(() => {
-    console.log(position);
-  }, [position]);
+  const BoxA = useControls("BoxA", options);
+  const BoxB = useControls("BoxB", options);
+
+  useEffect(() => {}, [objects]);
   return (
     <>
-      {state.current && (
-        <ContextMenu>
-          <h4>Transform Mode</h4>
-          <div>opject:{state.current.name}</div>
-          <ul>
-            <li
-              onClick={() => {
-                actions.setMode("translate");
-                setMenuPos(null);
-              }}
-            >
-              translate
-              <div>
-                <label htmlFor="xInput">X:</label>
-                <input
-                  type="number"
-                  id="xInput"
-                  name="x"
-                  value={state.current.position.x} // 현재 X 값 표시
-                  onChange={handleInputChange} // 입력값 변경 핸들러 호출
-                />
-
-                <label htmlFor="yInput">Y:</label>
-                <input
-                  type="number"
-                  id="yInput"
-                  name="y"
-                  value={state.current.position.y} // 현재 Y 값 표시
-                  onChange={handleInputChange} // 입력값 변경 핸들러 호출
-                />
-
-                <label htmlFor="zInput">Z:</label>
-                <input
-                  type="number"
-                  id="zInput"
-                  name="z"
-                  value={state.current.position.z} // 현재 Z 값 표시
-                  onChange={handleInputChange} // 입력값 변경 핸들러 호출
-                />
-              </div>
-            </li>
-
-            <li
-              onClick={() => {
-                actions.setMode("rotate");
-                setMenuPos(null);
-              }}
-            >
-              rotate
-            </li>
-            <li
-              onClick={() => {
-                actions.setMode("scale");
-                setMenuPos(null);
-              }}
-            >
-              scale
-            </li>
-          </ul>
-        </ContextMenu>
-      )}
-      <Canvas
-        camera={{ position: [20, 10, 5] }}
+      <Generate
         onClick={() => {
-          setMenuPos(null);
+          generate3DObject();
         }}
       >
-        <ambientLight intensity={Math.PI / 3} color="#fff" />
-
-        <spotLight distance={20} intensity={Math.PI / 5} color="#fff" />
-
-        <Box
-          setMenuPos={setMenuPos}
-          handleContextMenu={handleContextMenu}
-          name="pink"
-          position={[position.x, position.y, position.z]}
-          color="hotpink"
+        <div className="rect"></div>
+        <div>Cube</div>
+      </Generate>
+      <Canvas
+        style={{ width: "500px", height: "400px", background: "#eee" }}
+        camera={{ position: [1, 2, 3] }}
+        onPointerMissed={() => {
+          setTarget(null);
+        }}
+      >
+        {objects.map((object: any, index: any) => {
+          return (
+            <Box2
+              setTarget={setTarget}
+              position={[
+                object.position[0],
+                object.position[1],
+                object.position[2],
+              ]}
+              rotation={[
+                object.rotation[0],
+                object.rotation[1],
+                object.rotation[2],
+              ]}
+              scale={[object.scale[0], object.scale[1], object.scale[2]]}
+              visible={object.visible}
+              color={object.color}
+              wireframe={object.wireframe}
+              key={index}
+            />
+          );
+        })}
+        <Box2
+          setTarget={setTarget}
+          position={[BoxA.position_x, BoxA.position_y, BoxA.position_z]}
+          rotation={[BoxA.rotation_x, BoxA.rotation_y, BoxA.rotation_z]}
+          scale={[BoxA.scale_x, BoxA.scale_y, BoxA.scale_z]}
+          visible={BoxA.visible}
+          color={BoxA.color}
+          wireframe={BoxA.wireframe}
         />
-
+        <Box2
+          setTarget={setTarget}
+          position={[(BoxB.position_x = +2), BoxB.position_y, BoxB.position_z]}
+          rotation={[BoxB.rotation_x, BoxB.rotation_y, BoxB.rotation_z]}
+          scale={[BoxB.scale_x, BoxB.scale_y, BoxB.scale_z]}
+          visible={BoxB.visible}
+          color={BoxB.color}
+          wireframe={BoxB.wireframe}
+        />
+        {target && <TransformControls object={target} mode={mode} />}
+        <OrbitControls
+          makeDefault
+          minPolarAngle={1}
+          maxPolarAngle={Math.PI / 1.75}
+        />
         <gridHelper />
-        <Controls />
       </Canvas>
     </>
   );
 }
-const ContextMenu = styled.div<any>`
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  //background-color: #f0f0f0;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 14px;
-  z-index: 1000;
 
-  & ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+const Generate = styled.div`
+  cursor: pointer;
+  width: 10rem;
 
-  & li {
-    padding: 8px 10px;
-    cursor: pointer;
-    &:hover {
-      background-color: #ddd;
-      border-radius: 5px;
-    }
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+  .rect {
+    width: 3rem;
+    height: 3rem;
+    background-color: pink;
   }
 `;
