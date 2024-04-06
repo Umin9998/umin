@@ -1,0 +1,2963 @@
+{
+  "historic": {
+    "currentCommitHash": "3f014e29-711f-4bd0-a887-729448a584a6",
+    "commitsByHash": {
+      "25572243-0b77-4b60-a016-c5ce1b118e1e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls",
+            "value": {
+              "space": "local"
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls"
+          }
+        ],
+        "timestamp": 1711354297085,
+        "hash": "25572243-0b77-4b60-a016-c5ce1b118e1e"
+      },
+      "1b419873-ed96-4a84-8850-01bfcaf45eaf": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode"
+          }
+        ],
+        "timestamp": 1711354297700,
+        "hash": "1b419873-ed96-4a84-8850-01bfcaf45eaf"
+      },
+      "bf837988-3f08-49e7-8bd1-0d7fd75805c8": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "world"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "local"
+          }
+        ],
+        "timestamp": 1711354298016,
+        "hash": "bf837988-3f08-49e7-8bd1-0d7fd75805c8"
+      },
+      "2eefc916-58d9-4a37-b7e2-01d1416f2413": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "scale"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "timestamp": 1711354298362,
+        "hash": "2eefc916-58d9-4a37-b7e2-01d1416f2413"
+      },
+      "54977cd8-af49-496d-9b08-88a8404cca16": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "translate"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "scale"
+          }
+        ],
+        "timestamp": 1711354298725,
+        "hash": "54977cd8-af49-496d-9b08-88a8404cca16"
+      },
+      "95518d3f-c44b-4be2-affb-6c98cf3bd224": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/lighting",
+            "value": "legacy"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/lighting"
+          }
+        ],
+        "timestamp": 1711354299577,
+        "hash": "95518d3f-c44b-4be2-affb-6c98cf3bd224"
+      },
+      "aba655d6-137e-4582-9fb7-f885fa247112": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354341253,
+        "hash": "aba655d6-137e-4582-9fb7-f885fa247112"
+      },
+      "f2c55efd-e6e0-4c42-ab4e-7035163ec4ce": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet",
+            "value": {
+              "staticOverrides": {
+                "byObject": {
+                  "Light": {
+                    "color": {
+                      "r": 1,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet"
+          }
+        ],
+        "timestamp": 1711354346442,
+        "hash": "f2c55efd-e6e0-4c42-ab4e-7035163ec4ce"
+      },
+      "be917dcf-8d7a-4675-b777-6ecdf84e9fd4": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity",
+            "value": 1.35
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity"
+          }
+        ],
+        "timestamp": 1711354347802,
+        "hash": "be917dcf-8d7a-4675-b777-6ecdf84e9fd4"
+      },
+      "c94c190e-6fe8-4a41-93e2-ced08cc7fd0c": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity",
+            "value": 2.3600000000000003
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity",
+            "value": 1.35
+          }
+        ],
+        "timestamp": 1711354351297,
+        "hash": "c94c190e-6fe8-4a41-93e2-ced08cc7fd0c"
+      },
+      "6ee33db9-4316-4fd9-87ce-6a339612df5c": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "pointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354449915,
+        "hash": "6ee33db9-4316-4fd9-87ce-6a339612df5c"
+      },
+      "d0832bd6-6ff8-43f3-b55b-5d48743647bc": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/pointLight",
+            "value": {
+              "color": {
+                "r": 0.6470588235294118,
+                "g": 0,
+                "b": 0,
+                "a": 1
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/pointLight"
+          }
+        ],
+        "timestamp": 1711354453062,
+        "hash": "d0832bd6-6ff8-43f3-b55b-5d48743647bc"
+      },
+      "df782d5c-aa64-41cc-8946-96d60adaaf87": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "ambientLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "pointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354453971,
+        "hash": "df782d5c-aa64-41cc-8946-96d60adaaf87"
+      },
+      "c3fa6bac-a436-439d-b3c0-7dac98d2bc7e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/ambientLight",
+            "value": {
+              "intensity": 2.279999999999999
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/ambientLight"
+          }
+        ],
+        "timestamp": 1711354460172,
+        "hash": "c3fa6bac-a436-439d-b3c0-7dac98d2bc7e"
+      },
+      "ced91dd7-8ad2-4c18-b3c0-2a51197ed08a": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F",
+            "value": {
+              "sheetsById": {},
+              "definitionVersion": "0.4.0",
+              "revisionHistory": []
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F"
+          }
+        ],
+        "timestamp": 1711354580885,
+        "hash": "ced91dd7-8ad2-4c18-b3c0-2a51197ed08a"
+      },
+      "09818edf-aa5a-4134-b553-748a60e1f426": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          },
+          {
+            "op": "add",
+            "path": "/projects/stateByProjectId/Playground - R3F",
+            "value": {
+              "stateBySheetId": {
+                "R3F-Canvas": {
+                  "selectedInstanceId": "default",
+                  "sequenceEditor": {
+                    "selectedPropsByObject": {}
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "ambientLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          },
+          {
+            "op": "remove",
+            "path": "/projects/stateByProjectId/Playground - R3F"
+          }
+        ],
+        "timestamp": 1711354584415,
+        "hash": "09818edf-aa5a-4134-b553-748a60e1f426"
+      },
+      "3353aa1c-f9c7-41cc-b048-5ed9b1c3eccf": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354585527,
+        "hash": "3353aa1c-f9c7-41cc-b048-5ed9b1c3eccf"
+      },
+      "a479d7fd-3246-4c32-8bd5-095d655d899e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354587235,
+        "hash": "a479d7fd-3246-4c32-8bd5-095d655d899e"
+      },
+      "0755404d-56e2-40b4-af8a-831041e09d0f": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354588234,
+        "hash": "0755404d-56e2-40b4-af8a-831041e09d0f"
+      },
+      "9355d745-d640-4af8-9975-1daaf3edc436": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354589835,
+        "hash": "9355d745-d640-4af8-9975-1daaf3edc436"
+      },
+      "0fbeec06-afa9-4315-9985-a95922295800": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354590313,
+        "hash": "0fbeec06-afa9-4315-9985-a95922295800"
+      },
+      "39f61f19-6aa3-4128-8db4-1619091a0590": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354591400,
+        "hash": "39f61f19-6aa3-4128-8db4-1619091a0590"
+      },
+      "8387660f-de9e-424d-a40e-4be3f8ece6a4": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Playground - R3F"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354592330,
+        "hash": "8387660f-de9e-424d-a40e-4be3f8ece6a4"
+      },
+      "2da9ba57-c294-4831-88b6-808566e454ea": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354592660,
+        "hash": "2da9ba57-c294-4831-88b6-808566e454ea"
+      },
+      "3c7a607e-6927-41da-8d75-8599532793a7": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354593041,
+        "hash": "3c7a607e-6927-41da-8d75-8599532793a7"
+      },
+      "3c026397-f4fe-4e03-8095-ac6849cb1c07": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "timestamp": 1711354670865,
+        "hash": "3c026397-f4fe-4e03-8095-ac6849cb1c07"
+      },
+      "bfba6373-bc7c-4c30-afff-6beaf261dada": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "timestamp": 1711354671357,
+        "hash": "bfba6373-bc7c-4c30-afff-6beaf261dada"
+      },
+      "7657dc57-960d-45df-9d8d-0d282a900818": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "timestamp": 1711354671723,
+        "hash": "7657dc57-960d-45df-9d8d-0d282a900818"
+      },
+      "41a372ff-249d-4263-90f0-4f0282ccdf9f": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons"
+          }
+        ],
+        "timestamp": 1711354672202,
+        "hash": "41a372ff-249d-4263-90f0-4f0282ccdf9f"
+      },
+      "effd6acb-baf0-40c6-be75-b85df595f946": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": true
+          }
+        ],
+        "timestamp": 1711354672842,
+        "hash": "effd6acb-baf0-40c6-be75-b85df595f946"
+      },
+      "2aef52cb-9df4-4de8-bbf4-3204cf8fab1b": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": false
+          }
+        ],
+        "timestamp": 1711354677106,
+        "hash": "2aef52cb-9df4-4de8-bbf4-3204cf8fab1b"
+      },
+      "7c9da1d9-0ed1-478d-bb38-738513a81e1f": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "timestamp": 1711354677741,
+        "hash": "7c9da1d9-0ed1-478d-bb38-738513a81e1f"
+      },
+      "789f3b82-4cce-43cb-8433-7e8767b4f32c": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "timestamp": 1711354678266,
+        "hash": "789f3b82-4cce-43cb-8433-7e8767b4f32c"
+      },
+      "4a073f2c-d244-48ea-9e5f-5f3d2b3cd4ca": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "translate"
+          }
+        ],
+        "timestamp": 1711354681495,
+        "hash": "4a073f2c-d244-48ea-9e5f-5f3d2b3cd4ca"
+      },
+      "0cc52c92-cb7d-4c02-b83f-833ec0cd4d25": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "scale"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "timestamp": 1711354681933,
+        "hash": "0cc52c92-cb7d-4c02-b83f-833ec0cd4d25"
+      },
+      "371a76b3-ec91-4729-b7b2-d317c37f7189": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "scale"
+          }
+        ],
+        "timestamp": 1711354682510,
+        "hash": "371a76b3-ec91-4729-b7b2-d317c37f7189"
+      },
+      "2b79ef2b-dee8-47a5-9b0e-475eace1ad5c": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354686021,
+        "hash": "2b79ef2b-dee8-47a5-9b0e-475eace1ad5c"
+      },
+      "62909ab0-bda7-4e2e-8bdc-8deb1c356bb6": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354686386,
+        "hash": "62909ab0-bda7-4e2e-8bdc-8deb1c356bb6"
+      },
+      "bce06ed7-9d87-4fda-897e-87cdb126db5e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Box"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354687256,
+        "hash": "bce06ed7-9d87-4fda-897e-87cdb126db5e"
+      },
+      "82e91e1a-1be6-4d3b-a5a5-50547f442610": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "PointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Box"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354687710,
+        "hash": "82e91e1a-1be6-4d3b-a5a5-50547f442610"
+      },
+      "ce086272-ac9a-4bd5-9471-c64d1b4abbf9": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Spotlight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "PointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354691871,
+        "hash": "ce086272-ac9a-4bd5-9471-c64d1b4abbf9"
+      },
+      "ea83c9f7-8c0a-473a-bb04-fb8c1de20df2": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas",
+            "value": {
+              "staticOverrides": {
+                "byObject": {
+                  "Spotlight": {
+                    "angle": 0.25400000000000006
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas"
+          }
+        ],
+        "timestamp": 1711354696082,
+        "hash": "ea83c9f7-8c0a-473a-bb04-fb8c1de20df2"
+      },
+      "0ab1d034-9f77-4335-a259-75b08270d92e": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Spotlight/angle",
+            "value": 0.05199999999999999
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Spotlight/angle",
+            "value": 0.25400000000000006
+          }
+        ],
+        "timestamp": 1711354699432,
+        "hash": "0ab1d034-9f77-4335-a259-75b08270d92e"
+      },
+      "9292e278-334d-40ce-b137-ebe8600d446a": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Spotlight/angle",
+            "value": 0.025999999999999968
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Spotlight/angle",
+            "value": 0.05199999999999999
+          }
+        ],
+        "timestamp": 1711354703502,
+        "hash": "9292e278-334d-40ce-b137-ebe8600d446a"
+      },
+      "cca37829-a869-43e2-a20d-acd99c149694": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "PointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Spotlight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354705417,
+        "hash": "cca37829-a869-43e2-a20d-acd99c149694"
+      },
+      "ccd550bd-1548-4a98-a5bc-362611c7fb92": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/PointLight",
+            "value": {
+              "position": {
+                "x": 0.8700000000000004
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/PointLight"
+          }
+        ],
+        "timestamp": 1711354708132,
+        "hash": "ccd550bd-1548-4a98-a5bc-362611c7fb92"
+      },
+      "4197534c-b682-411c-b0dd-870b5cbd0543": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/PointLight/position/x",
+            "value": 1.3200000000000007
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/PointLight/position/x",
+            "value": 0.8700000000000004
+          }
+        ],
+        "timestamp": 1711354710406,
+        "hash": "4197534c-b682-411c-b0dd-870b5cbd0543"
+      },
+      "89a0a920-23f6-4ee0-a213-5d45d9ec2b49": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Box"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "PointLight"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354713396,
+        "hash": "89a0a920-23f6-4ee0-a213-5d45d9ec2b49"
+      },
+      "24d56db7-3796-4733-817f-8c4a2596f4aa": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box",
+            "value": {
+              "position": {
+                "x": 0.33000000000000007
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box"
+          }
+        ],
+        "timestamp": 1711354718161,
+        "hash": "24d56db7-3796-4733-817f-8c4a2596f4aa"
+      },
+      "b8df9ce1-dcb7-4a13-808d-8617590ea9eb": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/position/z",
+            "value": 0.22999999999999998
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/position/z"
+          }
+        ],
+        "timestamp": 1711354720275,
+        "hash": "b8df9ce1-dcb7-4a13-808d-8617590ea9eb"
+      },
+      "a9e4d17b-cf02-4e94-a7cb-76bca47fb205": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/rotation",
+            "value": {
+              "y": 0.060000000000000005
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/rotation"
+          }
+        ],
+        "timestamp": 1711354721900,
+        "hash": "a9e4d17b-cf02-4e94-a7cb-76bca47fb205"
+      },
+      "97831e44-2779-406b-8966-a9a3be81fff5": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/scale",
+            "value": {
+              "y": 1.3199999999999998
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Playground - R3F/sheetsById/R3F-Canvas/staticOverrides/byObject/Box/scale"
+          }
+        ],
+        "timestamp": 1711354724053,
+        "hash": "97831e44-2779-406b-8966-a9a3be81fff5"
+      },
+      "556199da-6a07-40af-96f7-17c1de288dac": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Playground - R3F",
+              "sheetId": "R3F-Canvas",
+              "objectKey": "Box"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711354776229,
+        "hash": "556199da-6a07-40af-96f7-17c1de288dac"
+      },
+      "8b6e2c80-9496-4069-8a31-5240ca713507": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "local"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "world"
+          }
+        ],
+        "timestamp": 1711354783539,
+        "hash": "8b6e2c80-9496-4069-8a31-5240ca713507"
+      },
+      "ee81ffca-e571-4e28-8ab1-3d5855af8603": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "world"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/space",
+            "value": "local"
+          }
+        ],
+        "timestamp": 1711354783995,
+        "hash": "ee81ffca-e571-4e28-8ab1-3d5855af8603"
+      },
+      "9f4d56c8-786e-4f57-b583-efe2c1a4c1ff": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355096926,
+        "hash": "9f4d56c8-786e-4f57-b583-efe2c1a4c1ff"
+      },
+      "3e75b61c-d0c3-4e96-b18b-c2614a5e9c6d": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355105768,
+        "hash": "3e75b61c-d0c3-4e96-b18b-c2614a5e9c6d"
+      },
+      "21d08e61-8275-4fce-b6b3-ce52bc31d13d": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Camera"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355106107,
+        "hash": "21d08e61-8275-4fce-b6b3-ce52bc31d13d"
+      },
+      "146750e8-6a4f-4b55-90b9-46c62d28e903": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Camera"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355106446,
+        "hash": "146750e8-6a4f-4b55-90b9-46c62d28e903"
+      },
+      "59a6e33b-e45b-492a-96e1-ef5af1bd9371": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355244960,
+        "hash": "59a6e33b-e45b-492a-96e1-ef5af1bd9371"
+      },
+      "7c4a5aa4-0d6a-4376-a92e-ac24bbfb567c": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/revisionHistory/0",
+            "value": "REGR-9bku5A3XPI5"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/revisionHistory/0"
+          }
+        ],
+        "timestamp": 1711355264685,
+        "hash": "7c4a5aa4-0d6a-4376-a92e-ac24bbfb567c"
+      },
+      "1de38d24-6670-43ac-b878-25a7cc37630d": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355270821,
+        "hash": "1de38d24-6670-43ac-b878-25a7cc37630d"
+      },
+      "879a66df-a1a9-4e65-b878-81254784440f": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "timestamp": 1711355273124,
+        "hash": "879a66df-a1a9-4e65-b878-81254784440f"
+      },
+      "9f0845d6-fbe4-42d4-92ab-9538cfb55bd3": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "timestamp": 1711355273483,
+        "hash": "9f0845d6-fbe4-42d4-92ab-9538cfb55bd3"
+      },
+      "2a4b04cb-00aa-483a-8a22-638156e3cb1e": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "timestamp": 1711355275247,
+        "hash": "2a4b04cb-00aa-483a-8a22-638156e3cb1e"
+      },
+      "cc107f20-5e53-4bc9-8569-70cd01ce322b": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "timestamp": 1711355275727,
+        "hash": "cc107f20-5e53-4bc9-8569-70cd01ce322b"
+      },
+      "b03450a4-de59-452e-8834-299f4aa28073": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355473275,
+        "hash": "b03450a4-de59-452e-8834-299f4aa28073"
+      },
+      "1a79c654-b482-47e7-b450-aaf538edea18": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/revisionHistory/0",
+            "value": "_Hc6-TW6vFAb3zHK"
+          },
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/revisionHistory/1"
+          },
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/elements",
+            "value": [
+              {
+                "id": "c4a0c598",
+                "sheet": {},
+                "type": "image",
+                "payload": {
+                  "id": 10,
+                  "base64": null,
+                  "title": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+                  "motiveId": null,
+                  "clientId": 1,
+                  "hash": null,
+                  "imageName": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+                  "width": 1022,
+                  "height": 1266,
+                  "parentId": null,
+                  "createdOn": 1634904348000,
+                  "pictureFileType": "png",
+                  "type": "DEFAULT",
+                  "tags": []
+                }
+              }
+            ]
+          },
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/revisionHistory/0",
+            "value": "REGR-9bku5A3XPI5"
+          },
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/revisionHistory/1"
+          },
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet",
+            "value": {
+              "staticOverrides": {
+                "byObject": {
+                  "Light": {
+                    "color": {
+                      "r": 1,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "intensity": 2.3600000000000003
+                  },
+                  "pointLight": {
+                    "color": {
+                      "r": 0.6470588235294118,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    }
+                  },
+                  "ambientLight": {
+                    "intensity": 2.279999999999999
+                  }
+                }
+              }
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/elements"
+          }
+        ],
+        "timestamp": 1711355477451,
+        "hash": "1a79c654-b482-47e7-b450-aaf538edea18"
+      },
+      "c57c5763-7b4d-4e5d-b988-590d41b72403": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355479349,
+        "hash": "c57c5763-7b4d-4e5d-b988-590d41b72403"
+      },
+      "0246fa79-bc46-419f-a123-eddc8003cabc": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355480203,
+        "hash": "0246fa79-bc46-419f-a123-eddc8003cabc"
+      },
+      "29f93a64-eb5c-4231-a2ac-898e5e53b69f": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Cube"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355480771,
+        "hash": "29f93a64-eb5c-4231-a2ac-898e5e53b69f"
+      },
+      "e03a148f-cb90-4408-b3a4-4aa9152656ff": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Cube"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355482213,
+        "hash": "e03a148f-cb90-4408-b3a4-4aa9152656ff"
+      },
+      "2db2ee8e-d5cc-474e-8e95-239f52d013b5": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet",
+            "value": {
+              "staticOverrides": {
+                "byObject": {
+                  "Light": {
+                    "color": {
+                      "r": 0.596078431372549,
+                      "g": 0.19215686274509805,
+                      "b": 0.19215686274509805,
+                      "a": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet"
+          }
+        ],
+        "timestamp": 1711355484071,
+        "hash": "2db2ee8e-d5cc-474e-8e95-239f52d013b5"
+      },
+      "e1e4b92e-922f-49c7-89ff-e30c77bc378f": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/b",
+            "value": 0
+          },
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/g",
+            "value": 0
+          },
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/r",
+            "value": 1
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/b",
+            "value": 0.19215686274509805
+          },
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/g",
+            "value": 0.19215686274509805
+          },
+          {
+            "op": "replace",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/color/r",
+            "value": 0.596078431372549
+          }
+        ],
+        "timestamp": 1711355484874,
+        "hash": "e1e4b92e-922f-49c7-89ff-e30c77bc378f"
+      },
+      "0c1ded89-9d9c-4277-bd07-1f5597504118": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity",
+            "value": 2.1599999999999984
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/intensity"
+          }
+        ],
+        "timestamp": 1711355486622,
+        "hash": "0c1ded89-9d9c-4277-bd07-1f5597504118"
+      },
+      "70753735-44cb-4154-ad46-821e7bc3748e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/distance",
+            "value": -4.64
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Light/distance"
+          }
+        ],
+        "timestamp": 1711355489244,
+        "hash": "70753735-44cb-4154-ad46-821e7bc3748e"
+      },
+      "6c19d068-e5a4-4865-b37b-7a52c25bdb81": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Cube"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Light"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711355490523,
+        "hash": "6c19d068-e5a4-4865-b37b-7a52c25bdb81"
+      },
+      "f288e3de-58cd-46b5-9cb7-59eb10994252": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube",
+            "value": {
+              "position": {
+                "x": 1.8900000000000008
+              }
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube"
+          }
+        ],
+        "timestamp": 1711355501140,
+        "hash": "f288e3de-58cd-46b5-9cb7-59eb10994252"
+      },
+      "2c54eb7a-f21a-4886-9e4a-3f1648e38996": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/position/y",
+            "value": 1.3700000000000003
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/position/y"
+          }
+        ],
+        "timestamp": 1711355502738,
+        "hash": "2c54eb7a-f21a-4886-9e4a-3f1648e38996"
+      },
+      "a516ad8b-1ff2-4244-be78-092b180703ae": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/position/z",
+            "value": -1.3600000000000005
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/position/z"
+          }
+        ],
+        "timestamp": 1711355504396,
+        "hash": "a516ad8b-1ff2-4244-be78-092b180703ae"
+      },
+      "18f61cd4-27d1-4384-a268-69e24fbc06d2": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation",
+            "value": {
+              "x": 0.32999999999999974
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation"
+          }
+        ],
+        "timestamp": 1711355508024,
+        "hash": "18f61cd4-27d1-4384-a268-69e24fbc06d2"
+      },
+      "e5cb1f41-dac8-4120-bfc6-29b4ce489f43": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation/y",
+            "value": 0.33
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation/y"
+          }
+        ],
+        "timestamp": 1711355509408,
+        "hash": "e5cb1f41-dac8-4120-bfc6-29b4ce489f43"
+      },
+      "2ce12bda-d3da-40f6-8ffd-17fd699c3e01": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation/z",
+            "value": -0.06000000000000002
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/rotation/z"
+          }
+        ],
+        "timestamp": 1711355510901,
+        "hash": "2ce12bda-d3da-40f6-8ffd-17fd699c3e01"
+      },
+      "e011f376-f2b7-44b7-8a8d-ce1116b6bd8f": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/scale",
+            "value": {
+              "x": 1.6300000000000006
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/Demo Project/sheetsById/Demo Sheet/staticOverrides/byObject/Cube/scale"
+          }
+        ],
+        "timestamp": 1711355512742,
+        "hash": "e011f376-f2b7-44b7-8a8d-ce1116b6bd8f"
+      },
+      "aab31157-244a-47d3-a58f-29c211169517": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet",
+              "objectKey": "Cube"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711356634509,
+        "hash": "aab31157-244a-47d3-a58f-29c211169517"
+      },
+      "21a5027e-38c5-4c3a-97e8-454ddb2b55e2": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Demo Project"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711356635273,
+        "hash": "21a5027e-38c5-4c3a-97e8-454ddb2b55e2"
+      },
+      "4184cbde-f67c-43a6-8ab0-103894ef8788": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711356635723,
+        "hash": "4184cbde-f67c-43a6-8ab0-103894ef8788"
+      },
+      "4bab2bb8-8573-4a8b-aff9-a4cda22a8a6e": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711356636145,
+        "hash": "4bab2bb8-8573-4a8b-aff9-a4cda22a8a6e"
+      },
+      "ac27ea09-4051-4fbf-99a4-e731339b9b4a": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1711356636585,
+        "hash": "ac27ea09-4051-4fbf-99a4-e731339b9b4a"
+      },
+      "9169e370-0af2-4799-8c19-8badabc5eff5": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "timestamp": 1712107819999,
+        "hash": "9169e370-0af2-4799-8c19-8badabc5eff5"
+      },
+      "19edb822-9527-445d-af38-3d9f6a6973b7": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "timestamp": 1712107820571,
+        "hash": "19edb822-9527-445d-af38-3d9f6a6973b7"
+      },
+      "5b3cfab3-5c0a-4d9a-a98e-67d78a04e2eb": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": false
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showOverlayIcons",
+            "value": true
+          }
+        ],
+        "timestamp": 1712107820947,
+        "hash": "5b3cfab3-5c0a-4d9a-a98e-67d78a04e2eb"
+      },
+      "22c53fcb-09a2-4703-8149-1345f39d8a44": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "translate"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/transformControls/mode",
+            "value": "rotate"
+          }
+        ],
+        "timestamp": 1712107828462,
+        "hash": "22c53fcb-09a2-4703-8149-1345f39d8a44"
+      },
+      "b9167bd1-f32a-42f3-bc87-f0b935e3d5d8": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showAxes",
+            "value": false
+          }
+        ],
+        "timestamp": 1712108600050,
+        "hash": "b9167bd1-f32a-42f3-bc87-f0b935e3d5d8"
+      },
+      "52c431e9-ea6c-4fbc-9060-88a4e2075f1d": {
+        "forwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": true
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "replace",
+            "path": "/coreByProject/Studio/sheetsById/R3F UI/staticOverrides/byObject/Editor/viewport/showGrid",
+            "value": false
+          }
+        ],
+        "timestamp": 1712108600639,
+        "hash": "52c431e9-ea6c-4fbc-9060-88a4e2075f1d"
+      },
+      "9eea3082-e1b0-49bc-ad8b-b54a8ca04f4f": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1712109633268,
+        "hash": "9eea3082-e1b0-49bc-ad8b-b54a8ca04f4f"
+      },
+      "8202bd06-0f8a-48c5-9bb8-e6e94a67004a": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Demo Project",
+              "sheetId": "Demo Sheet"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1712109843603,
+        "hash": "8202bd06-0f8a-48c5-9bb8-e6e94a67004a"
+      },
+      "f05d41c4-7f13-4e3a-b0ac-4d2a6c04c634": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Project",
+              "projectId": "Studio"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1712109844004,
+        "hash": "f05d41c4-7f13-4e3a-b0ac-4d2a6c04c634"
+      },
+      "52975f7a-8057-4034-a435-eae8769aabfa": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "add",
+            "path": "/panels/outlinePanel/selection/0",
+            "value": {
+              "type": "Sheet",
+              "projectId": "Studio",
+              "sheetId": "R3F UI"
+            }
+          },
+          {
+            "op": "remove",
+            "path": "/panels/outlinePanel/selection/1"
+          }
+        ],
+        "timestamp": 1712109844434,
+        "hash": "52975f7a-8057-4034-a435-eae8769aabfa"
+      },
+      "3f014e29-711f-4bd0-a887-729448a584a6": {
+        "forwardDiff": [
+          {
+            "op": "add",
+            "path": "/coreByProject/My Project",
+            "value": {
+              "sheetsById": {},
+              "definitionVersion": "0.4.0",
+              "revisionHistory": []
+            }
+          }
+        ],
+        "backwardDiff": [
+          {
+            "op": "remove",
+            "path": "/coreByProject/My Project"
+          }
+        ],
+        "timestamp": 1712109919940,
+        "hash": "3f014e29-711f-4bd0-a887-729448a584a6"
+      }
+    },
+    "listOfCommitHashes": [
+      "25572243-0b77-4b60-a016-c5ce1b118e1e",
+      "1b419873-ed96-4a84-8850-01bfcaf45eaf",
+      "bf837988-3f08-49e7-8bd1-0d7fd75805c8",
+      "2eefc916-58d9-4a37-b7e2-01d1416f2413",
+      "54977cd8-af49-496d-9b08-88a8404cca16",
+      "95518d3f-c44b-4be2-affb-6c98cf3bd224",
+      "aba655d6-137e-4582-9fb7-f885fa247112",
+      "f2c55efd-e6e0-4c42-ab4e-7035163ec4ce",
+      "be917dcf-8d7a-4675-b777-6ecdf84e9fd4",
+      "c94c190e-6fe8-4a41-93e2-ced08cc7fd0c",
+      "6ee33db9-4316-4fd9-87ce-6a339612df5c",
+      "d0832bd6-6ff8-43f3-b55b-5d48743647bc",
+      "df782d5c-aa64-41cc-8946-96d60adaaf87",
+      "c3fa6bac-a436-439d-b3c0-7dac98d2bc7e",
+      "ced91dd7-8ad2-4c18-b3c0-2a51197ed08a",
+      "09818edf-aa5a-4134-b553-748a60e1f426",
+      "3353aa1c-f9c7-41cc-b048-5ed9b1c3eccf",
+      "a479d7fd-3246-4c32-8bd5-095d655d899e",
+      "0755404d-56e2-40b4-af8a-831041e09d0f",
+      "9355d745-d640-4af8-9975-1daaf3edc436",
+      "0fbeec06-afa9-4315-9985-a95922295800",
+      "39f61f19-6aa3-4128-8db4-1619091a0590",
+      "8387660f-de9e-424d-a40e-4be3f8ece6a4",
+      "2da9ba57-c294-4831-88b6-808566e454ea",
+      "3c7a607e-6927-41da-8d75-8599532793a7",
+      "3c026397-f4fe-4e03-8095-ac6849cb1c07",
+      "bfba6373-bc7c-4c30-afff-6beaf261dada",
+      "7657dc57-960d-45df-9d8d-0d282a900818",
+      "41a372ff-249d-4263-90f0-4f0282ccdf9f",
+      "effd6acb-baf0-40c6-be75-b85df595f946",
+      "2aef52cb-9df4-4de8-bbf4-3204cf8fab1b",
+      "7c9da1d9-0ed1-478d-bb38-738513a81e1f",
+      "789f3b82-4cce-43cb-8433-7e8767b4f32c",
+      "4a073f2c-d244-48ea-9e5f-5f3d2b3cd4ca",
+      "0cc52c92-cb7d-4c02-b83f-833ec0cd4d25",
+      "371a76b3-ec91-4729-b7b2-d317c37f7189",
+      "2b79ef2b-dee8-47a5-9b0e-475eace1ad5c",
+      "62909ab0-bda7-4e2e-8bdc-8deb1c356bb6",
+      "bce06ed7-9d87-4fda-897e-87cdb126db5e",
+      "82e91e1a-1be6-4d3b-a5a5-50547f442610",
+      "ce086272-ac9a-4bd5-9471-c64d1b4abbf9",
+      "ea83c9f7-8c0a-473a-bb04-fb8c1de20df2",
+      "0ab1d034-9f77-4335-a259-75b08270d92e",
+      "9292e278-334d-40ce-b137-ebe8600d446a",
+      "cca37829-a869-43e2-a20d-acd99c149694",
+      "ccd550bd-1548-4a98-a5bc-362611c7fb92",
+      "4197534c-b682-411c-b0dd-870b5cbd0543",
+      "89a0a920-23f6-4ee0-a213-5d45d9ec2b49",
+      "24d56db7-3796-4733-817f-8c4a2596f4aa",
+      "b8df9ce1-dcb7-4a13-808d-8617590ea9eb",
+      "a9e4d17b-cf02-4e94-a7cb-76bca47fb205",
+      "97831e44-2779-406b-8966-a9a3be81fff5",
+      "556199da-6a07-40af-96f7-17c1de288dac",
+      "8b6e2c80-9496-4069-8a31-5240ca713507",
+      "ee81ffca-e571-4e28-8ab1-3d5855af8603",
+      "9f4d56c8-786e-4f57-b583-efe2c1a4c1ff",
+      "3e75b61c-d0c3-4e96-b18b-c2614a5e9c6d",
+      "21d08e61-8275-4fce-b6b3-ce52bc31d13d",
+      "146750e8-6a4f-4b55-90b9-46c62d28e903",
+      "59a6e33b-e45b-492a-96e1-ef5af1bd9371",
+      "7c4a5aa4-0d6a-4376-a92e-ac24bbfb567c",
+      "1de38d24-6670-43ac-b878-25a7cc37630d",
+      "879a66df-a1a9-4e65-b878-81254784440f",
+      "9f0845d6-fbe4-42d4-92ab-9538cfb55bd3",
+      "2a4b04cb-00aa-483a-8a22-638156e3cb1e",
+      "cc107f20-5e53-4bc9-8569-70cd01ce322b",
+      "b03450a4-de59-452e-8834-299f4aa28073",
+      "1a79c654-b482-47e7-b450-aaf538edea18",
+      "c57c5763-7b4d-4e5d-b988-590d41b72403",
+      "0246fa79-bc46-419f-a123-eddc8003cabc",
+      "29f93a64-eb5c-4231-a2ac-898e5e53b69f",
+      "e03a148f-cb90-4408-b3a4-4aa9152656ff",
+      "2db2ee8e-d5cc-474e-8e95-239f52d013b5",
+      "e1e4b92e-922f-49c7-89ff-e30c77bc378f",
+      "0c1ded89-9d9c-4277-bd07-1f5597504118",
+      "70753735-44cb-4154-ad46-821e7bc3748e",
+      "6c19d068-e5a4-4865-b37b-7a52c25bdb81",
+      "f288e3de-58cd-46b5-9cb7-59eb10994252",
+      "2c54eb7a-f21a-4886-9e4a-3f1648e38996",
+      "a516ad8b-1ff2-4244-be78-092b180703ae",
+      "18f61cd4-27d1-4384-a268-69e24fbc06d2",
+      "e5cb1f41-dac8-4120-bfc6-29b4ce489f43",
+      "2ce12bda-d3da-40f6-8ffd-17fd699c3e01",
+      "e011f376-f2b7-44b7-8a8d-ce1116b6bd8f",
+      "aab31157-244a-47d3-a58f-29c211169517",
+      "21a5027e-38c5-4c3a-97e8-454ddb2b55e2",
+      "4184cbde-f67c-43a6-8ab0-103894ef8788",
+      "4bab2bb8-8573-4a8b-aff9-a4cda22a8a6e",
+      "ac27ea09-4051-4fbf-99a4-e731339b9b4a",
+      "9169e370-0af2-4799-8c19-8badabc5eff5",
+      "19edb822-9527-445d-af38-3d9f6a6973b7",
+      "5b3cfab3-5c0a-4d9a-a98e-67d78a04e2eb",
+      "22c53fcb-09a2-4703-8149-1345f39d8a44",
+      "b9167bd1-f32a-42f3-bc87-f0b935e3d5d8",
+      "52c431e9-ea6c-4fbc-9060-88a4e2075f1d",
+      "9eea3082-e1b0-49bc-ad8b-b54a8ca04f4f",
+      "8202bd06-0f8a-48c5-9bb8-e6e94a67004a",
+      "f05d41c4-7f13-4e3a-b0ac-4d2a6c04c634",
+      "52975f7a-8057-4034-a435-eae8769aabfa",
+      "3f014e29-711f-4bd0-a887-729448a584a6"
+    ],
+    "innerState": {
+      "projects": {
+        "stateByProjectId": {
+          "Studio": {
+            "stateBySheetId": {
+              "R3F UI": {
+                "selectedInstanceId": "default",
+                "sequenceEditor": {
+                  "selectedPropsByObject": {}
+                }
+              }
+            }
+          },
+          "Demo Project": {
+            "stateBySheetId": {
+              "Demo Sheet": {
+                "selectedInstanceId": "default",
+                "sequenceEditor": {
+                  "selectedPropsByObject": {}
+                }
+              }
+            }
+          },
+          "Playground - R3F": {
+            "stateBySheetId": {
+              "R3F-Canvas": {
+                "selectedInstanceId": "default",
+                "sequenceEditor": {
+                  "selectedPropsByObject": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "autoKey": true,
+      "coreByProject": {
+        "Demo Project": {
+          "sheetsById": {
+            "Demo Sheet": {
+              "staticOverrides": {
+                "byObject": {
+                  "Light": {
+                    "color": {
+                      "r": 1,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "intensity": 2.1599999999999984,
+                    "distance": -4.64
+                  },
+                  "Cube": {
+                    "position": {
+                      "x": 1.8900000000000008,
+                      "y": 1.3700000000000003,
+                      "z": -1.3600000000000005
+                    },
+                    "rotation": {
+                      "x": 0.32999999999999974,
+                      "y": 0.33,
+                      "z": -0.06000000000000002
+                    },
+                    "scale": {
+                      "x": 1.6300000000000006
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "definitionVersion": "0.4.0",
+          "elements": [
+            {
+              "id": "c4a0c598",
+              "sheet": {},
+              "type": "image",
+              "payload": {
+                "id": 10,
+                "base64": null,
+                "title": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+                "motiveId": null,
+                "clientId": 1,
+                "hash": null,
+                "imageName": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+                "width": 1022,
+                "height": 1266,
+                "parentId": null,
+                "createdOn": 1634904348000,
+                "pictureFileType": "png",
+                "type": "DEFAULT",
+                "tags": []
+              }
+            }
+          ],
+          "revisionHistory": ["_Hc6-TW6vFAb3zHK"]
+        },
+        "Studio": {
+          "sheetsById": {
+            "R3F UI": {
+              "staticOverrides": {
+                "byObject": {
+                  "Editor": {
+                    "viewport": {
+                      "showAxes": true,
+                      "showGrid": true,
+                      "lighting": "legacy",
+                      "showOverlayIcons": false
+                    },
+                    "transformControls": {
+                      "space": "world",
+                      "mode": "translate"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "definitionVersion": "0.4.0",
+          "revisionHistory": ["_Hc6-TW6vFAb3zHK"]
+        },
+        "Playground - R3F": {
+          "sheetsById": {
+            "R3F-Canvas": {
+              "staticOverrides": {
+                "byObject": {
+                  "Spotlight": {
+                    "angle": 0.025999999999999968
+                  },
+                  "PointLight": {
+                    "position": {
+                      "x": 1.3200000000000007
+                    }
+                  },
+                  "Box": {
+                    "position": {
+                      "x": 0.33000000000000007,
+                      "z": 0.22999999999999998
+                    },
+                    "rotation": {
+                      "y": 0.060000000000000005
+                    },
+                    "scale": {
+                      "y": 1.3199999999999998
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "definitionVersion": "0.4.0",
+          "revisionHistory": []
+        },
+        "My Project": {
+          "sheetsById": {},
+          "definitionVersion": "0.4.0",
+          "revisionHistory": []
+        }
+      },
+      "panelInstanceDesceriptors": {},
+      "panels": {
+        "outlinePanel": {
+          "selection": [
+            {
+              "type": "SheetObject",
+              "projectId": "Studio",
+              "sheetId": "R3F UI",
+              "objectKey": "Editor"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ahistoric": {
+    "visibilityState": "everythingIsVisible",
+    "theTrigger": {
+      "position": {
+        "closestCorner": "bottomLeft",
+        "distanceFromHorizontalEdge": 0.02,
+        "distanceFromVerticalEdge": 0.02
+      }
+    },
+    "coreByProject": {
+      "Demo Project": {
+        "ahistoricStuff": ""
+      },
+      "Studio": {
+        "ahistoricStuff": ""
+      },
+      "Playground - R3F": {
+        "ahistoricStuff": ""
+      },
+      "My Project": {
+        "ahistoricStuff": ""
+      }
+    },
+    "projects": {
+      "stateByProjectId": {}
+    },
+    "updateChecker": {
+      "lastChecked": 1712109605468,
+      "result": {
+        "hasUpdates": true,
+        "newVersion": "0.7.0",
+        "releasePage": "https://www.theatrejs.com/docs/latest/releases#0.7.0"
+      }
+    },
+    "pinDetails": false,
+    "pinOutline": true,
+    "pinNotifications": true
+  }
+}

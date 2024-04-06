@@ -1,0 +1,28 @@
+{
+  "sheetsById": {
+    "R3F UI": {
+      "staticOverrides": {
+        "byObject": {
+          "Editor": {
+            "viewport": {
+              "showAxes": true,
+              "showGrid": true,
+              "lighting": "legacy",
+              "showOverlayIcons": false,
+              "shading": "rendered"
+            },
+            "transformControls": {
+              "space": "world",
+              "mode": "translate"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "3mpWrqFb_Qos6S39",
+    "_Hc6-TW6vFAb3zHK"
+  ]
+}

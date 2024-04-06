@@ -1,0 +1,44 @@
+{
+  "sheetsById": {
+    "R3F-Canvas": {
+      "staticOverrides": {
+        "byObject": {
+          "Spotlight": {
+            "angle": 0.025999999999999968
+          },
+          "PointLight": {
+            "position": {
+              "x": 1.3200000000000007
+            }
+          },
+          "Box": {
+            "position": {
+              "x": 0.33000000000000007,
+              "z": 0.22999999999999998
+            },
+            "rotation": {
+              "y": 0.060000000000000005
+            },
+            "scale": {
+              "y": 1.3199999999999998
+            }
+          },
+          "Box2": {
+            "position": {
+              "x": 2,
+              "z": 2
+            },
+            "rotation": {
+              "y": 0.060000000000000005
+            },
+            "scale": {
+              "y": 1.3199999999999998
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": ["arUi1xIJO8AbNGQs"]
+}

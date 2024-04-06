@@ -3,18 +3,8 @@ import StyledComponentsRegistry from "@/styles/StyledComponentsRegistry";
 
 import "@/styles/globals.css";
 import "normalize.css";
-import { StrictMode, Suspense } from "react";
 import { styled } from "styled-components";
 
-import React, { useEffect } from "react";
-
-import studio from "@theatre/studio";
-import extension from "@theatre/r3f/dist/extension";
-
-if (process.env.NODE_ENV === "development") {
-  studio.initialize();
-  studio.extend(extension);
-}
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html>
@@ -48,15 +38,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </head>{" "}
       {/* <body>{children}</body> */}
       <StyledComponentsRegistry>
-        <body>
-          {" "}
-          <div id="root">
-            <StrictMode>
-              <Suspense fallback={null}></Suspense>
-              {children}
-            </StrictMode>
-          </div>
-        </body>
+        <body>{children}</body>
       </StyledComponentsRegistry>
     </html>
   );

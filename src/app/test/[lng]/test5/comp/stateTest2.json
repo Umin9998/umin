@@ -1,0 +1,64 @@
+{
+  "sheetsById": {
+    "Demo Sheet": {
+      "staticOverrides": {
+        "byObject": {
+          "Light": {
+            "color": {
+              "r": 1,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            },
+            "intensity": 2.1599999999999984,
+            "distance": -4.64
+          },
+          "Cube": {
+            "position": {
+              "x": 1.8900000000000008,
+              "y": 1.3700000000000003,
+              "z": -1.3600000000000005
+            },
+            "rotation": {
+              "x": 0.32999999999999974,
+              "y": 0.33,
+              "z": -0.06000000000000002
+            },
+            "scale": {
+              "x": 1.6300000000000006
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "elements": [
+    {
+      "id": "c4a0c598",
+      "sheet": {},
+      "type": "image",
+      "payload": {
+        "id": 10,
+        "base64": null,
+        "title": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+        "motiveId": null,
+        "clientId": 1,
+        "hash": null,
+        "imageName": "90635a13-78de-4271-a3ce-c7f35ececa8e.png",
+        "width": 1022,
+        "height": 1266,
+        "parentId": null,
+        "createdOn": 1634904348000,
+        "pictureFileType": "png",
+        "type": "DEFAULT",
+        "tags": []
+      }
+    }
+  ],
+  "revisionHistory": [
+    "NWNvAHWW-PkeTBso",
+    "_1ZYNxpHHMBez8ap",
+    "_Hc6-TW6vFAb3zHK"
+  ]
+}
