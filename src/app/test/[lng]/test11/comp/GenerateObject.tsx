@@ -34,9 +34,9 @@ const GenerateObject = ({
             key={index}
             draggable
             onClick={() => {
-              setSelectedObjectType(object.type);
+              // setSelectedObjectType(object.type);
               createObject(object.type);
-              console.log(threeSceneRef.current, "threeSceneRef.current");
+              console.log("onClick", object.type);
             }}
             onDragStart={() => {
               setSelectedObjectType(object.type);

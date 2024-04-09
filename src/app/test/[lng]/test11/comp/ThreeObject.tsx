@@ -13,12 +13,18 @@ interface ControllableBoxProps {
   onControlStart: () => void;
   onControlEnd: () => void;
 }
-const ThreeObject = ({ props, boxRef, setHover, item }: any) => {
-  const { setMode, target, updateObject, mode, selectObject } =
-    useObjectStore_v6();
+const ThreeObject = ({
+  boxRef,
+  setHover,
+  item,
+  draggingPosition,
+  position,
+}: any) => {
+  console.log(draggingPosition, "draggedPosition");
+  const { setMode, mode } = useObjectStore_v6();
   const { size, viewport } = useThree();
   const aspect = size.width / viewport.width;
-
+  console.log(item, "item");
   const keyMap = useKeyboard();
   useFrame(() => {
     keyMap["KeyW"] && setMode("translate");
@@ -27,7 +33,7 @@ const ThreeObject = ({ props, boxRef, setHover, item }: any) => {
   });
   const [, set] = useControls(() => ({
     position: {
-      value: { x: 1, y: 1, z: 1 },
+      value: { x: position.x, y: position.y, z: position.z },
       onChange: (value) => {
         if (boxRef.current) {
           boxRef.current.position.set(value.x, value.y, value.z);
@@ -84,12 +90,7 @@ const ThreeObject = ({ props, boxRef, setHover, item }: any) => {
       });
     }
   };
-  const onControlStart = () => {
-    console.log("onControlStart");
-  };
-  const onControlEnd = () => {
-    console.log("onControlEnd");
-  };
+
   return (
     <>
       <TransformControls
@@ -97,37 +98,36 @@ const ThreeObject = ({ props, boxRef, setHover, item }: any) => {
         object={boxRef.current ?? undefined}
         onChange={handleObjectChange}
         mode={mode}
-        onMouseDown={onControlStart}
-        onMouseUp={onControlEnd}
       >
         <mesh
-          {...props}
+          geometry={item.geometry}
+          position={position}
           ref={boxRef}
           onClick={(e: any) => {
             boxRef.current = e.object;
-            selectObject(boxRef.current);
+            // selectObject(boxRef.current);
           }}
           onPointerOver={(e: any) => (e.stopPropagation(), setHover(true))}
           onPointerOut={(e: any) => setHover(false)}
           dispose={null}
           castShadow
         >
-          {item.geometry.type === "BoxGeometry" && (
-            <boxGeometry args={[1, 1, 1]} />
-          )}
-          {item.type === "SphereGeometry" && (
-            <sphereGeometry args={[1, 15, 15]} />
-          )}
-          {item.geometry.type === "ConeGeometry" && <coneGeometry />}
-          {item.geometry.type === "CylinderGeometry" && (
-            <cylinderGeometry args={[1, 1, 1]} />
-          )}
-          {item.geometry.type === "CapsuleGeometry" && (
-            <capsuleGeometry args={[1, 1, 1]} />
-          )}
-          {item.geometry.type === "TorusGeometry" && (
-            <torusGeometry args={[1, 0.4, 16, 100]} />
-          )}
+          {/* {item.geometry.type === "BoxGeometry" && (
+          <boxGeometry args={[1, 1, 1]} />
+        )}
+        {item.type === "SphereGeometry" && (
+          <sphereGeometry args={[1, 15, 15]} />
+        )}
+        {item.geometry.type === "ConeGeometry" && <coneGeometry />}
+        {item.geometry.type === "CylinderGeometry" && (
+          <cylinderGeometry args={[1, 1, 1]} />
+        )}
+        {item.geometry.type === "CapsuleGeometry" && (
+          <capsuleGeometry args={[1, 1, 1]} />
+        )}
+        {item.geometry.type === "TorusGeometry" && (
+          <torusGeometry args={[1, 0.4, 16, 100]} />
+        )} */}
           <meshStandardMaterial />
         </mesh>
       </TransformControls>
